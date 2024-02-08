@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Kalam', cursive;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 35px; 
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Kalam', cursive;
+    font-weight: 500;
+    padding: 15px 20px;
+    font-size: 24px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.slide-content h2 {
+    font-size: 55px;
+    margin-bottom: 4px;
+}
+
+.slide-content p {
+    font-size: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#slide1 {
+    top: 80%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#slide1 p{
+    max-width: 800px;
+}
+
+.academics-section {
+    text-align: center; 
+    padding: 50px 0;
+}
+
+.academics-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.academics-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+.academic-programs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program {
+    height: 200px;
+    width: 40%;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.program:nth-child(1) {
+    background-image: url('assets/school6.jpg');
+}
+
+.program:nth-child(2) {
+    background-image: url('assets/school7.jpg');
+}
+
+.program:nth-child(3) {
+    background-image: url('assets/school8.jpg');
+}
+
+.program:nth-child(4) {
+    background-image: url('assets/school9.jpg');
+}
+
+.program h3,
+.program p {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.program h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.program p {
+    font-size: 16px;
+}
+
+.about-image{
+    height: 90%;
+}
+
+.photo-gallery-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.photo-gallery-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-section {
+        height: auto;
+    }
+
+    .swiper-image {
+        height: auto;
+    }
+
+    .slide-content {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .slide-content h2 {
+        font-size: 20px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .academics-section {
+        padding: 30px 0;
+    }
+
+    .academics-section h2 {
+        font-size: 28px;
+    }
+
+    .academics-section p {
+        font-size: 16px;
+    }
+
+    .academic-programs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-image {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .photo-gallery-section {
+        padding: 30px 0;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+}
+
